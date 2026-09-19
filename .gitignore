@@ -17,6 +17,9 @@ AGENT.pdf
 # No markdown files in this repo
 *.md
 
+# Dashboard is a separate deliverable, not part of this repo
+Dashboard/
+
 # Internal notes - job-search strategy, not for public view
 CLAUDE.md
 
