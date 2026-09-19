@@ -14,6 +14,9 @@ logs/*.jsonl
 # Exported copies of tracked .md files - redundant, drifts out of sync
 AGENT.pdf
 
+# No markdown files in this repo
+*.md
+
 # Internal notes - job-search strategy, not for public view
 CLAUDE.md
 
