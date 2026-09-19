@@ -1,6 +1,16 @@
 # UN SDG SQL Agent
 
-A LangGraph agent that lets anyone ask a policy question in plain English and get a data-backed, SQL-powered answer, over a SQLite database built from UN Sustainable Development Goals data.
+A LangGraph agent that answers plain-English policy questions over UN Sustainable Development Goals data — 193 countries, 123 indicators, 293K data points — by inspecting the schema, writing its own SQL, checking the result, and retrying when needed. Runs on Claude Sonnet 5, at $0.06–$0.13 per question after cost profiling (down from an initial $0.39).
+
+## Quick start
+
+```bash
+pip install langchain langchain-community langchain-anthropic anthropic
+export ANTHROPIC_API_KEY="sk-ant-..."   # PowerShell: $env:ANTHROPIC_API_KEY = "sk-ant-..."
+python src/run_agent.py "Which Sub-Saharan African countries improved most in SDG 3 since 2015?"
+```
+
+The database (`data/processed/sdg_analytics.db`) is included in this repo — no build step required. To rebuild it from source, run `notebooks/02_database_build.ipynb`.
 
 ---
 
