@@ -1,0 +1,13 @@
+pandas==2.2.2
+numpy==1.26.4
+scipy==1.13.0
+wbgapi==1.0.12
+anthropic==0.28.0
+langchain==0.2.6
+langchain-anthropic==0.1.19
+langchain-community==0.2.6
+matplotlib==3.8.4
+seaborn==0.13.2
+plotly==5.22.0
+sparqlwrapper==2.0.0
+# sqlite3 is built into Python standard library — no install needed

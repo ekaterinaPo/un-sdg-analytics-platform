@@ -1,0 +1,21 @@
+# Power BI temp files
+*.pbix.tmp
+~$*
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python (if any prep scripts get added)
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Keep the .pbix and screenshots tracked. Keep source data tracked only if
+# the file is small and the licence allows redistribution. If the SDG Index
+# download is large, delete the next line and document the download steps
+# in data/README.md instead.
+# data/*.csv

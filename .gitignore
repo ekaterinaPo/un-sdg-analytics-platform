@@ -1,0 +1,35 @@
+# Built database - reproducible via notebooks/02_database_build.ipynb
+data/processed/*.db
+
+# Source data - third-party exports, not ours to redistribute; download
+# steps are documented in data/raw/README.md and CLAUDE.md
+Dashboard/data/*.xlsx
+Dashboard/data/*.xls
+data/raw/*.xlsx
+data/raw/*.xls
+
+# Agent run logs - local artifact, grows over time, not project source
+logs/*.jsonl
+
+# Exported copies of tracked .md files - redundant, drifts out of sync
+AGENT.pdf
+
+# Internal notes - job-search strategy, not for public view
+CLAUDE.md
+
+# Dashboard planning/study docs - not part of the agent, contain
+# personal job-application and interview-prep notes
+Dashboard/BUILD_PLAN.md
+Dashboard/DAX_measures.md
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
