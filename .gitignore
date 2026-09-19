@@ -1,6 +1,3 @@
-# Built database - reproducible via notebooks/02_database_build.ipynb
-data/processed/*.db
-
 # Source data - third-party exports, not ours to redistribute; download
 # steps are documented in data/raw/README.md and CLAUDE.md
 Dashboard/data/*.xlsx
@@ -14,8 +11,9 @@ logs/*.jsonl
 # Exported copies of tracked .md files - redundant, drifts out of sync
 AGENT.pdf
 
-# No markdown files in this repo
+# Only the root README.md is tracked - every other markdown file stays local-only
 *.md
+!/README.md
 
 # Dashboard is a separate deliverable, not part of this repo
 Dashboard/
